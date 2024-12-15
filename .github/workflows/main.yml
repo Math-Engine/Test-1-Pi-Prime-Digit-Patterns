@@ -1,0 +1,24 @@
+name: Test-1-Pi-Prime-Digit-Patterns
+on:
+  workflow_dispatch:
+    inputs:
+      n:
+        description: 'n'
+        required: true
+        default: '1000'
+        type: string
+
+run-name: Test-1-Pi-Prime-Digit-Patterns ( ${{ github.event.inputs.n }} )
+
+jobs:
+  calculate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '23.x'
+      - name: Run script
+        run: node calculate.js ${{ github.event.inputs.n }}
