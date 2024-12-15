@@ -18,11 +18,12 @@ n = Number(process.argv[2]);
 result = [];
 result_distribution = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
+let num;
 for (var i = 2; i <= n; i++) {
   if (isPrime(i) == false) {
     continue;
   }
-  let num = PI[i - 1];
+  num = PI[i - 1];
   result.push(num);
   result_distribution[num] = result_distribution[num] + 1;
 }
