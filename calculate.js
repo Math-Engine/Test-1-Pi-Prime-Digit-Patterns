@@ -28,6 +28,7 @@ for (var i = 2; i <= n; i++) {
 }
 
 print("n = ${n}");
+print("2 이상 n 이하의 소수의 개수: ${result.length}");
 print("==========");
 for (var i = 0; i < 10; i++) {
   print("${i} : ${result_distribution[num]}");
