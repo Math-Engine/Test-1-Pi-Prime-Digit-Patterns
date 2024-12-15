@@ -23,7 +23,7 @@ for (var i = 2; i <= n; i++) {
     continue;
   }
   let num = PI[i - 1];
-  result = result.push(num);
+  result.push(num);
   result_distribution[num] = result_distribution[num] + 1;
 }
 
