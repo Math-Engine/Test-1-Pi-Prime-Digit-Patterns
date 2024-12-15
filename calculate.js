@@ -27,11 +27,11 @@ for (var i = 2; i <= n; i++) {
   result_distribution[num] = result_distribution[num] + 1;
 }
 
-print("n = ${n}");
-print("2 이상 n 이하의 소수의 개수: ${result.length}");
-print("==========");
+console.log("n = ${n}");
+console.log("2 이상 n 이하의 소수의 개수: ${result.length}");
+console.log("==========");
 for (var i = 0; i < 10; i++) {
-  print("${i} : ${result_distribution[num]}");
+  console.log("${i} : ${result_distribution[num]}");
 }
-print("==========");
-print(result);
+console.log("==========");
+console.log(result);
