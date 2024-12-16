@@ -17,6 +17,7 @@ n = Number(process.argv[2]);
 
 result = [];
 result_distribution = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+prime_array = [];
 
 let num;
 for (var i = 2; i <= n; i++) {
@@ -26,6 +27,7 @@ for (var i = 2; i <= n; i++) {
   num = PI[i - 1];
   result.push(num);
   result_distribution[num] = result_distribution[num] + 1;
+  prime_array.push(i);
 }
 
 console.log(`n = ${n}`);
@@ -35,5 +37,5 @@ for (var i = 0; i < 10; i++) {
   console.log(`${i} : ${result_distribution[i]}`);
 }
 console.log("==========");
-console.log(`마지막 소수: ${result[result.length - 1]}`);
+console.log(`마지막 소수: ${prime_array[prime_array.length - 1]}`);
 console.log(result);
