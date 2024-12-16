@@ -35,4 +35,5 @@ for (var i = 0; i < 10; i++) {
   console.log(`${i} : ${result_distribution[i]}`);
 }
 console.log("==========");
+console.log(`마지막 소수: ${result[result.length - 1]}`);
 console.log(result);
